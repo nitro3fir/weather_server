@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прогноз погоды</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .weather-info {
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  p {
+    margin: 0;
+  }
+  .temperature {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="weather-info">
+    <h1>{{ data[0] }}</h1>
+    <p class="temperature">{{ data[1] }}℃</p>
+    <p class="description">Скорость ветра: {{ data[2]}} м/c</p>
+    <p class="description">Направление ветра: {{ data[3]}}</p>
+    <p class="description">Рассвет: {{ data[4]}}</p>
+    <p class="description">Закат: {{ data[5]}}</p>
+    <p class="location">Москва, Россия</p>
+  </div>
+</div>
+</body>
+</html>

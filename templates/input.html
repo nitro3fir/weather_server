@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Прогноз погоды</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .weather-info {
+    width: 30%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  h1 {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  p {
+    margin: 0;
+  }
+  .temperature {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+  .location {
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="weather-info">
+      <form method="post">
+        <div class="mb-3">
+          <label for="city_name" class="form-label">City name:</label>
+          <input type="text" class="form-control" id="city_name" name="city_name" required>
+        </div>
+        <div class="mb-3">
+          <label for="lang" class="form-label">Language:</label>
+          <input type="text" class="form-control" id="lang" name="lang" required>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Enter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
